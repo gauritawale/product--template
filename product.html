@@ -3,33 +3,67 @@
     <title>product template</title>
     <link rel="stylesheet" href="product.css">
 
-        <div id="container">	
-	
-                <div class="product-details">
-                    
-                <h1>Biru Putaran</h1>
+    <script>
+    let count = 0;
+    function inc() {
+        count++;
+        document.getElementById("counter").innerHTML = count;
+    }
+    function dec() {
+        count--;
+        document.getElementById("counter").innerHTML = count;
+    }
+    function reset() {
+        count = 0;
+        document.getElementById("counter").innerHTML = count;
+    }
 
+</script>
+<body>
+
+
+
+            <div class="cards-container">
+                <div class="Container">
+                         
+            <div class="card-title">
+                <span class="heading">Flower Buke Shop</span>
+            
+                <div class="card-decription">
+                    <p class="para">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+            
+                    </p>
                 
-                    
-                
-                    <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+                 <div class="card-prize">
+                                      <button class="prize-btn">$ 209.00</button>
+                 
+                 <div class="prod-quantity">
+                              <h3 class="quantity">Quantity</h3>
+                              </div>
+                              </div>
             
                     
                     
-                    <div class="control">
+                   
+                <div  class="event-onclick">
+                         <button onclick="dec()" class="btn-2">
+                              <img  class="icons" src="./img/minus-icon.png"/>
+                        </button>
+                        <h1 id="counter">0</h1>
+                       <button onclick="inc()" class="btn-2">
+                        <img class="icons" src="./img/plus-icon.png"/>
+                       </button>
+                        <button onclick="reset()" class="btn-1">Reset</button>
+                        <div class="control">
                 
-                        <button class="btn">
-                         <span class="price">49 $</span>
-                          <span class="buy">Buy Now</span>
-                     </button>
-                        
-                    </div>
-                        
+                       
+                </div>
+                </div>
             </div>
-                
-                
-                
-                
+        </div>
+        </body>
+
+                        </head>   
                 
             <div class="product-image">
                 
@@ -45,10 +79,16 @@
                     <li><strong>Blooms in: </strong>Mid‑Summer - Mid‑Fall</li>
                     <li><strong>Features: </strong>Tolerates heat</li>
                 </ul>
-            </div>
+                </div>
+                </div>
+
+        
+
+                </div>
             </div>
             
             
             </div>
+
         </body>
         </html>
